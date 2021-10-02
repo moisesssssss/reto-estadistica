@@ -12,4 +12,9 @@ df = sns.load_dataset('iris')
 df.head()
 df.describe()
 df.columns
+#Ejemplos por especies
 df['species'].value_counts()
+#Barplot Seabron
+sns.countplot(x = 'species', data = df).set_title('Conteo Especies Iris')
+#Areaplot para cada variable
+df.plot.area().set_title('Areaplot de Iris')
