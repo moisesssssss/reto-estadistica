@@ -9,4 +9,7 @@ import seaborn as sns
 #df = data('iris')
 #Cargar base de datos
 df = sns.load_dataset('iris')
-
+df.head()
+df.describe()
+df.columns
+df['species'].value_counts()
